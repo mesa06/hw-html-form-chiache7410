@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>index</title>
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.min.css" />
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile/jquery.mobile.min.js"></script>
+    </head>
+    
+    <body>
+        <div data-role="page">
+            <div data-role="content">
+                <form method="post" action="http://jsapplab.site88.net/echo.php">
+                    <div data-role="fieldcontain">
+                        <label for="txtAccount">帳號:</label>
+                        <input type="text" name="txtAccount" id="txtAccount" value="" placeholder="請輸入帳號" />
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="txtPasswd">密碼:</label>
+                        <input type="password" name="txtPasswd" id="txtPasswd" value="" placeholder="請輸入密碼" />
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="sltgithub">是否有github帳號:</label>
+                        <select name="sltgithub" id="sltgithub" data-role="slider">
+                            <option value="0">沒有</option>
+                            <option value="1">有</option>
+                        </select>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="sltc9">是否有C9帳號:</label>
+                        <select name="sltc9" id="sltc9" data-role="slider">
+                            <option value="0">沒有</option>
+                            <option value="1">有</option>
+                        </select>
+                    </div> 
+                    
+                    
+                    <!-- submit -->
+    				<div class="ui-grid-b">
+    					<div class="ui-block-a"></div>
+    					<div class="ui-block-b"><input type="submit" name="btnOK" value="OK" /></div>
+    					<div class="ui-block-c"><input type="submit" name="btnCancel" value="Cancel" /></div>
+    				</div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
